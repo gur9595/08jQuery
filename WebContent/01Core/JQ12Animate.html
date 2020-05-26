@@ -7,7 +7,11 @@
     <script src="../common/jquery/jquery-3.5.1.js"></script>
     <script>
         $(function(){
-
+            /*
+            animate(효과, 시간)
+                인자1: 효과의 경우에는 여러가지를 동시에 부여해야하므로JSON형태를 사용한다
+                인자2: 시간은 초단위 혹은 slow, fast, normal을 시용한다
+            */
             $('#go').click(function(){
 
                 $('div').animate({left:'+=100px',opacity:0.2,height:'+=10px'},'slow');
@@ -16,9 +20,14 @@
             $('#stop').click(function(){
                 $('#div').stop();
             });
+            
             $('#back').click(function(){
                 $('div').animate({left:'-=100px', opacity:1, height:'-=10px'},'2000')
             });
+            /*
+            효과에 대한 참조 URL
+            https://www.w3schools.com/jquery/eff_animate.asp
+            */
             $('#start').click(function(){
                 $('div').animate({height:'300px',opacity:'0.4'},'slow');
                 $('div').animate({width:'300px',opacity:'0.8'},'slow');
