@@ -6,5 +6,3 @@ String name = request.getParameter("name");
 String price = request.getParameter("price");
 String method = request.getParameter("method"); 
 %>
-
-{"method":"<%=method %>","name":"<%=name %>","price":"<%=price %>"}
